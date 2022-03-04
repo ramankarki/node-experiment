@@ -1,0 +1,30 @@
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+[0mGET /test [32m200[0m 7.721 ms - 32[0m
+[0mGET /test [32m200[0m 0.912 ms - 32[0m
+[0mGET /test [32m200[0m 5.071 ms - 31[0m
+[0mGET / [32m200[0m 5001.229 ms - 32[0m
+[0mGET / [32m200[0m 5004.271 ms - 32[0m
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
+Server is running on port: 5000
