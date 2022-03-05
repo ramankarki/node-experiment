@@ -14,6 +14,7 @@ server.listen(PORT, () => console.log(`Server is running on port: ${PORT}`));
 // pm2 start server.js -l logs.txt -i max
 // pm2 reload server
 
+// using multiple socket connections with single http server
 const namespace = io.of('/pong');
 
 namespace.on('connection', (socket) => {
