@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const socket = io('http://localhost:5000');
+const socket = io('http://localhost:5000/pong');
 // socket.on('connect', () => console.log(socket.id));
 
 function App() {

@@ -14,7 +14,9 @@ server.listen(PORT, () => console.log(`Server is running on port: ${PORT}`));
 // pm2 start server.js -l logs.txt -i max
 // pm2 reload server
 
-io.on('connection', (socket) => {
+const namespace = io.of('/pong');
+
+namespace.on('connection', (socket) => {
   // console.log('User connected -', socket.id);
 
   socket.on('ready', (data) => console.log(data, '-', socket.id));
