@@ -19,8 +19,23 @@ const namespace = io.of('/pong');
 
 namespace.on('connection', (socket) => {
   // console.log('User connected -', socket.id);
+  let room = 'room name';
 
-  socket.on('ready', (data) => console.log(data, '-', socket.id));
+  // custom event
+  socket.on('ready', (data) => {
+    console.log(data, '-', socket.id);
+
+    socket.join(room);
+  });
+
+  setInterval(() => {
+    namespace.in(room).emit('room test', 'yo xai room test garna lai data');
+  }, 4000);
 
   socket.emit('server ready', 'server le emit gareko data');
+
+  socket.on('disconnect', (reason) => {
+    console.log(`Client ${socket.id} disconnected: ${reason}`);
+    socket.leave(room);
+  });
 });

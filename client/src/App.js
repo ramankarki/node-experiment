@@ -6,6 +6,7 @@ import './App.css';
 
 const socket = io('http://localhost:5000/pong');
 // socket.on('connect', () => console.log(socket.id));
+socket.on('room test', (data) => console.log(data));
 
 function App() {
   useEffect(() => {
